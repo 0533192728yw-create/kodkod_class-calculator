@@ -71,6 +71,14 @@ export const operations = [
       return a / b;
     },
   },
+  {
+    id: "add",
+    label: "Addition",
+    symbol: "+",
+    arity: 2,
+    contributor: "Elimelech",
+    execute: (first, second) => first + second,
+  },
 
 
 ];
