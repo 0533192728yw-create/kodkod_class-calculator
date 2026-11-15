@@ -78,6 +78,7 @@ export const operations = [
       return a / b;
     },
   },
+  
   {
     id: "min",
     label: "minimum",
