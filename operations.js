@@ -2,6 +2,14 @@
 
 export const operations = [
   {
+    id: "add",
+    label: "Addition",
+    symbol: "+",
+    arity: 2,
+    contributor: "Eliav Mauda",
+    execute: (first, second) => first + second,
+  },
+  {
     id: "sub",
     label: "Subtraction",
     symbol: "-",
@@ -38,7 +46,7 @@ export const operations = [
     contributor: "shmuel",
     execute: (base, exponent) => base ** exponent,
   },
- {
+  {
     id: "factorial",
     label: "Factorial",
     symbol: "n!",
@@ -58,12 +66,11 @@ export const operations = [
       return result;
     },
   },
-
   {
     id: "division",
     label: "Division",
     symbol: "÷",
-    args: 2,
+    arity: 2,
     execute: (a, b) => {
       if (b === 0) {
         throw new Error("Cannot divide by zero");
@@ -72,6 +79,7 @@ export const operations = [
     },
   },
   {
+
     id: "add",
     label: "Addition",
     symbol: "+",
@@ -81,4 +89,41 @@ export const operations = [
   },
 
 
+
+    id: "min",
+    label: "minimum",
+    symbol: "Min",
+    arity: 2,
+    contributor: "Eliav Mauda",
+    execute: (a, b) => Math.min(a, b),
+  },
+  {
+    id: "max",
+    label: "maximum",
+    symbol: "Max",
+    arity: 2,
+    contributor: "Eliav Mauda",
+    execute: (a, b) => Math.max(a, b),
+  },
+  {
+    id: "avg",
+    label: "average",
+    symbol: "Avg",
+    arity: 2,
+    contributor: "Eliav Mauda",
+    execute: (a, b) => Math.avg(a, b),
+  },
+  {
+    id: "sqrt",
+    label: "Square Root",
+    symbol: "√",
+    arity: 1,
+    contributor: "יצחק בלוך וג'מיני",
+    execute: (n) => {
+      if (n < 0) {
+        throw new Error("Cannot take square root of a negative number");
+      }
+      return Math.sqrt(n);
+    },
+  },
 ];
