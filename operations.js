@@ -66,12 +66,11 @@ export const operations = [
       return result;
     },
   },
-
   {
     id: "division",
     label: "Division",
     symbol: "÷",
-    args: 2,
+    arity: 2,
     execute: (a, b) => {
       if (b === 0) {
         throw new Error("Cannot divide by zero");
@@ -80,6 +79,7 @@ export const operations = [
     },
   },
   {
+
     id: "min",
     label: "minimum",
     symbol: "Min",
@@ -102,5 +102,18 @@ export const operations = [
     arity: 2,
     contributor: "Eliav Mauda",
     execute: (a, b) => Math.avg(a, b),
+  },
+  {
+    id: "sqrt",
+    label: "Square Root",
+    symbol: "√",
+    arity: 1,
+    contributor: "יצחק בלוך וג'מיני",
+    execute: (n) => {
+      if (n < 0) {
+        throw new Error("Cannot take square root of a negative number");
+      }
+      return Math.sqrt(n);
+    },
   },
 ];
