@@ -6,7 +6,7 @@ export const operations = [
     label: "Addition",
     symbol: "+",
     arity: 2,
-    contributor: "Eliav Mauda",
+    contributor: "Eliav Mauda & Elimelech",
     execute: (first, second) => first + second,
   },
   {
@@ -79,7 +79,6 @@ export const operations = [
     },
   },
   {
-
     id: "min",
     label: "minimum",
     symbol: "Min",
@@ -101,7 +100,7 @@ export const operations = [
     symbol: "Avg",
     arity: 2,
     contributor: "Eliav Mauda",
-    execute: (a, b) => Math.avg(a, b),
+    execute: (a, b) => (a + b) / 2,
   },
   {
     id: "sqrt",
