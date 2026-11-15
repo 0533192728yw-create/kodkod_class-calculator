@@ -6,7 +6,7 @@ export const operations = [
     label: "Addition",
     symbol: "+",
     arity: 2,
-    contributor: "Eliav Mauda & Elimelech",
+    contributor: "Elimelech",
     execute: (first, second) => first + second,
   },
   {
